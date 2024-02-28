@@ -12,7 +12,7 @@ const options = {
   },
   headers:{
     accept: 'application/json',
-    Authorization:'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmZjU1MzI0YWViNWM3Njk2YzgwMGNmNGZiYTM2ZWE1OCIsInN1YiI6IjY1ZDY5MzBmYzVjMWVmMDE3ZDhiMzllYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.N9uoMpZ7yNwnr1F_kA1QwXLAT1zzINDUrFIiS0Ry_lU'
+    Authorization:'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4ZjRhNjBhZGE0ZDU0NzgyOGMzYzNkY2U3NDc1YmE1YiIsInN1YiI6IjY1ZDY5MzBmYzVjMWVmMDE3ZDhiMzllYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.t2YE4hbzRcUyzI0pzJkL5io99IgLWczTnNn1av_ebiY'
 
   }
 }
@@ -34,7 +34,7 @@ export class MovieService {
   }
 
   getRatedMovies() {
-    return this.http.get('https://api.themoviedb.org/3/guest_session/guest_session_id/rated/movies', options)
+    return this.http.get('https://api.themoviedb.org/3/account/21023517/rated/movies', options)
   }
 
   getBannerImage(id: number) {
